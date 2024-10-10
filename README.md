@@ -74,10 +74,10 @@ graph TD
     B --> C{если i < 3}
     C --> D[/Ввод y/]
     D --> E{y != u && y != t && y != h}
-    E -- Нет --> G[/h = t, t = u, u = y/]
-    E -- Да --> F[/count++/]
+    E -- Нет --> G[h = t, t = u, u = y]
+    E -- Да --> F[count++]
     F --> G
-    G --> Q[/i++/]
+    G --> Q[i++]
     Q --> C
     C -- Нет --> O{Если count == 4}
     O -- Нет --> Z[/Вывод count, "NO"/]
